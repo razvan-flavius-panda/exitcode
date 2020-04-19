@@ -7,8 +7,8 @@ let
 
   modifiedHaskellPackages = haskellPackages.override {
     overrides = self: super: {
-      hedgehog       = self.callHackage "hedgehog" "0.6" {};
-      tasty-hedgehog = self.callHackage "tasty-hedgehog" "0.2.0.0" {};
+      hedgehog       = self.callHackage "hedgehog" "1.0.2" {};
+      tasty-hedgehog = self.callHackage "tasty-hedgehog" "1.0.0.2" {};
       polyparse = self.callHackage "polyparse" "1.12.1" {};
       concurrent-output = pkgs.haskell.lib.doJailbreak super.concurrent-output;
     };
